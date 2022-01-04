@@ -1,12 +1,17 @@
+body{
+    margin-right: -20px;
+}
+button:hover{
+    transform: scale(1.1); ;
+}
 .bodyContainer{
     display: flex;
-   
+    background-image: url('/images/space.jpg');
     justify-content: space-between;
     height: 100vh;
     width: 100vw;
     margin: 0 auto;
     font-family: 'Share Tech Mono', monospace;
-    background-size: 100%;
     background-color: black;
     color: white;
 }
@@ -16,7 +21,6 @@
 }
 
 .mainCharacterView{
-
 width: 50%;
 display: flex;
 flex-direction: column;
@@ -44,8 +48,8 @@ align-items: center;
 }
 .playerImage{
     border: 1px solidblack;
-    width: 30vw;
-    height: 40vh;
+    width: 25vw;
+    height: 35vh;
     background-image: url("/images/space_hero.gif");
     background-size: cover ;
     background-position: center;
@@ -60,8 +64,8 @@ align-items: center;
     justify-content: center;
     align-items: center;
     border: 1px solidblack;
-    width: 15vw;
-    height: 15vh;
+    width: 10vw;
+    height: 10vh;
     text-align: center;
     font-size: 1.5em;
     box-shadow: 0px 0px 20px 10px white;
@@ -71,8 +75,8 @@ align-items: center;
 }
 .enemyImage{
     border: 1px solidblack;
-    width: 30vw;
-    height: 35vh;
+    width: 25vw;
+    height: 30vh;
     background-image: url("/images/enemy.gif");
     background-size: cover ;
     background-position: center;
@@ -87,11 +91,58 @@ align-items: center;
     justify-content: center;
     align-items: center;
     border: 1px solidblack;
-    width: 15vw;
-    height: 15vh;
+    width: 10vw;
+    height: 10vh;
     text-align: center;
     font-family: 'Share Tech Mono', monospace;
     font-size: 1.5em;
     box-shadow: 0px 0px 20px 10px white;
 
+}
+
+.gameMessage{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+
+}
+
+#endGame{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 88px;
+    width: 250px;
+
+}
+
+.buttons *{
+    width: 150px;
+    height: 50px;
+    margin: 30px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px 10px red;
+}
+
+.restart{
+    width: 130px;
+    height: 50px;
+    margin: 30px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px 10px red;
 }
